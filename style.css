@@ -1,0 +1,670 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #e8f3f1;
+
+    color: #102a35;
+}
+
+
+/* =================================
+   MAIN GRID
+================================= */
+
+.container {
+    width: 1120px;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        260px 260px 260px 260px;
+
+    grid-template-rows:
+        320px 250px 250px;
+
+    gap: 24px;
+}
+
+
+/* =================================
+   COMMON CARD
+================================= */
+
+.card {
+    border-radius: 20px;
+
+    padding: 28px;
+
+    overflow: hidden;
+}
+
+
+/* =================================
+   DISCOVER CARD
+================================= */
+
+.discover {
+    background: #fff4df;
+
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.small-label {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    color: #168c8c;
+
+    margin-bottom: 20px;
+}
+
+.discover h2 {
+    font-size: 31px;
+
+    line-height: 1.05;
+
+    margin-top: 40px;
+}
+
+.discover h2 span {
+    color: #ef7657;
+
+    font-style: italic;
+}
+
+.discover button {
+    margin-top: 28px;
+
+    border: none;
+
+    background: #ef7657;
+
+    color: white;
+
+    padding: 15px 23px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.discover button:hover {
+    background: #d95f45;
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.hero {
+    grid-column: 2 / 4;
+    grid-row: 1;
+
+    background: #103b4a;
+
+    color: white;
+
+    text-align: center;
+
+    padding-top: 55px;
+}
+
+.hero-small {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #6ed6ca;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+
+    line-height: 0.9;
+}
+
+.hero h1 span {
+    color: #ef7657;
+
+    font-style: italic;
+}
+
+.hero-text {
+    width: 80%;
+
+    margin: 25px auto 0;
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    color: #d3e8e5;
+}
+
+
+/* =================================
+   DEPTH CARD
+================================= */
+
+.depth {
+    grid-column: 4;
+    grid-row: 1 / 3;
+
+    background: #bde8df;
+}
+
+.depth h2 {
+    font-size: 30px;
+
+    line-height: 1;
+
+    margin-bottom: 28px;
+}
+
+.depth-box {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 23px;
+}
+
+.depth-box p {
+    font-size: 13px;
+
+    color: #668087;
+}
+
+.depth-box strong {
+    display: block;
+
+    font-size: 32px;
+
+    margin-top: 8px;
+
+    color: #103b4a;
+}
+
+.ocean-line {
+    height: 90px;
+
+    margin-top: 15px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #dff7f3,
+            #8bd6d0
+        );
+
+    border-radius: 10px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.wave {
+    width: 150px;
+
+    height: 35px;
+
+    background: #168c8c;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    bottom: -20px;
+
+    left: 20px;
+}
+
+.depth-labels {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 10px;
+
+    font-size: 11px;
+
+    color: #71878b;
+}
+
+.description {
+    margin-top: 22px;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* =================================
+   MARINE LIFE
+================================= */
+
+.marine {
+    grid-column: 1;
+    grid-row: 2 / 4;
+
+    background: #ef7657;
+
+    color: white;
+}
+
+.marine .small-label {
+    color: #fff4df;
+}
+
+.marine h2 {
+    font-size: 31px;
+
+    line-height: 1;
+
+    margin-top: 30px;
+}
+
+.creatures {
+    margin-top: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.creature {
+    background: rgba(255,255,255,0.18);
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    font-size: 25px;
+}
+
+.creature span {
+    font-size: 14px;
+
+    margin-left: 10px;
+
+    vertical-align: middle;
+}
+
+
+/* =================================
+   DIVING
+================================= */
+
+.diving {
+    grid-column: 2;
+    grid-row: 2;
+
+    background: #fff4df;
+}
+
+.circle-icon {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #168c8c;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+.diving h2 {
+    font-size: 28px;
+
+    line-height: 1;
+
+    margin-bottom: 15px;
+}
+
+.diving p {
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    color: #526970;
+}
+
+.location {
+    margin-top: 18px;
+
+    background: #dff3ef;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    font-size: 12px;
+
+    color: #168c8c;
+}
+
+
+/* =================================
+   CONSERVATION
+================================= */
+
+.conservation {
+    grid-column: 3;
+    grid-row: 2;
+
+    background: #168c8c;
+
+    color: white;
+}
+
+.conservation .small-label {
+    color: #bde8df;
+}
+
+.conservation h2 {
+    font-size: 29px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.progress-box {
+    background: white;
+
+    color: #103b4a;
+
+    border-radius: 15px;
+
+    padding: 18px;
+}
+
+.progress-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 12px;
+
+    margin-bottom: 12px;
+}
+
+.progress {
+    height: 12px;
+
+    background: #dcecea;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+
+    width: 30%;
+
+    background: #ef7657;
+
+    border-radius: 10px;
+}
+
+.progress-box p {
+    font-size: 11px;
+
+    margin-top: 12px;
+
+    line-height: 1.3;
+}
+
+
+/* =================================
+   FACTS
+================================= */
+
+.facts {
+    grid-column: 2;
+    grid-row: 3;
+
+    background: #ffffff;
+}
+
+.fact-number {
+    font-size: 58px;
+
+    font-weight: bold;
+
+    color: #168c8c;
+
+    margin-bottom: 12px;
+}
+
+.facts p {
+    font-size: 17px;
+
+    line-height: 1.25;
+}
+
+.bubbles {
+    margin-top: 35px;
+
+    display: flex;
+
+    gap: 12px;
+
+    color: #bde8df;
+}
+
+.bubbles span:nth-child(2) {
+    font-size: 20px;
+}
+
+.bubbles span:nth-child(3) {
+    font-size: 14px;
+}
+
+.bubbles span:nth-child(4) {
+    font-size: 25px;
+}
+
+
+/* =================================
+   JOURNEY
+================================= */
+
+.journey {
+    grid-column: 3 / 5;
+    grid-row: 3;
+
+    background: #103b4a;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+.map-card {
+    width: 185px;
+
+    height: 175px;
+
+    background: #fff4df;
+
+    color: #103b4a;
+
+    border-radius: 16px;
+
+    padding: 18px;
+
+    flex-shrink: 0;
+}
+
+.map-card p {
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    color: #168c8c;
+}
+
+.map-card h3 {
+    margin-top: 15px;
+
+    font-size: 17px;
+}
+
+.route {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 25px;
+}
+
+.route span {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #ef7657;
+}
+
+.route div {
+    height: 2px;
+
+    flex: 1;
+
+    background: #168c8c;
+}
+
+.map-card small {
+    display: block;
+
+    margin-top: 15px;
+
+    font-size: 10px;
+
+    color: #668087;
+}
+
+.journey-text p {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #6ed6ca;
+
+    margin-bottom: 15px;
+}
+
+.journey-text h2 {
+    font-size: 34px;
+
+    line-height: 1;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 94%;
+
+        grid-template-columns:
+            1fr 1fr;
+
+        grid-template-rows: auto;
+    }
+
+    .card {
+        grid-column: auto !important;
+
+        grid-row: auto !important;
+
+        min-height: 250px;
+    }
+
+    .hero {
+        grid-column:
+            1 / 3 !important;
+    }
+
+    .depth {
+        grid-column:
+            1 / 3 !important;
+    }
+
+    .journey {
+        grid-column:
+            1 / 3 !important;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero,
+    .depth,
+    .journey {
+        grid-column: 1 !important;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .journey {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+}
